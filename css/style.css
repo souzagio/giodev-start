@@ -52,6 +52,34 @@ header h1{
     font-size: 1.8em;
 }
 
+header .nav-container ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    margin: 0 3px;
+
+    &::after{
+        content: "";
+        background-color: rgb(62, 3, 199);
+        height: 2px;
+        display: block;
+        width: 0%;
+        margin: 0 auto;
+        transition: .4s;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+    
+    &:hover{
+        color: rgb(219, 87, 39);
+        font-weight: 600;
+    }
+
+    
+}
+
 header nav ul{
     display: flex;
     justify-content: space-between;
@@ -101,7 +129,7 @@ header h2{
 header p{
     text-align: justify;
     padding-top: 9px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 header .header-container .desc ul{
@@ -115,7 +143,7 @@ header .header-container .desc ul a{
     padding: 10px 30px;
     margin: 0px 10px;
     border: 1px solid rgba(41, 41, 173, 0.829);
-    box-shadow: 0px 0px 2px rgba(41, 41, 173, 0.685);
+    box-shadow: 0px 0px 2px rgba(41, 41, 173, 0.459);
     border-radius: 8px;
     font-family: var(--font-destaque);
     font-weight: 700;
@@ -126,3 +154,51 @@ header .header-container .desc ul a{
 header .header-container .desc ul i{
     margin: 0px 4px 0px 0;
 }
+
+/* HOVER ON BUTTONS */
+header .desc ul #curriculo:hover{
+    background-color: rgb(113, 5, 156);
+    color: white;
+    transform: translate(-2px, -5px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747);
+    border: 1px solid black;
+}
+
+header .desc ul #github:hover{
+    background-image: linear-gradient(to bottom, #3f3f3f 10%,#2c2c2c);
+    color: white;
+    transform: translate(-2px, -5px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747);
+    border: 1px solid black;
+}
+
+header .desc ul #lkdin:hover{
+    background-color: #0A66C2;
+    color: white;
+    transform: translate(-2px, -5px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.904);
+    border: 1px solid black;
+}
+
+/* SEPARETE LINE */
+header .line{
+    background-color: rgb(88, 3, 105);
+    height: 2px;
+    width: 90%;
+    transform: translateY(25px);
+    margin-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* START MAIN */
+main{
+    margin-top: 50px;
+    padding: 25px 180px 10px 180px;
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+}
+/* END MAIN */
