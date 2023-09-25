@@ -1,0 +1,16 @@
+@charset "UFT-8";
+
+:root{
+    --cor1: #89F0BE;
+    --cor2: #1E6E47;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
