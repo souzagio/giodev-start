@@ -131,6 +131,30 @@ header p{
     padding-top: 9px;
     font-size: 1em;
 }
+/* PARAGRAPH DECORATION */
+header #item{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(87, 56, 221);
+    align-self: flex-end;
+    transform: translate(-19px, 14px);
+}
+
+header #item2{
+    height: 14px;
+    width: 16px;
+    background-color: rgb(59, 34, 170);
+    align-self: flex-end;
+    
+}
+
+header #item3{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(129, 108, 219);
+    align-self: flex-end;
+    transform: translate(0px, -25px) rotateZ(45deg)
+}
 
 header .header-container .desc ul{
  display: flex;
@@ -140,7 +164,7 @@ header .header-container .desc ul{
 /* LINKS AREA */
 header .header-container .desc ul a{
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin: 0px 10px;
     border: 1px solid rgba(41, 41, 173, 0.829);
     box-shadow: 0px 0px 2px rgba(41, 41, 173, 0.459);
@@ -157,7 +181,7 @@ header .header-container .desc ul i{
 
 /* HOVER ON BUTTONS */
 header .desc ul #curriculo:hover{
-    background-color: rgb(113, 5, 156);
+    background-color: rgb(143, 0, 199);
     color: white;
     transform: translate(-2px, -5px);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.747);
@@ -193,12 +217,25 @@ header .line{
 
 /* START MAIN */
 main{
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 25px 180px 10px 180px;
 }
 
 main .container{
     display: flex;
     align-items: center;
+}
+
+main .container h1{
+    font-family: var(--font-destaque);
+    font-weight: 900;
+
+    &::after{
+        content: "";
+        height: 5px;
+        background-color: rgb(129, 3, 129);
+        display: block;
+        width: 59%;
+    }
 }
 /* END MAIN */
