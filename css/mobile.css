@@ -6,16 +6,20 @@
     }
 
 
-   html, body{
+   html{
         width: 98vw;
         margin: 0;
         border-radius: 0;
     }
 
+    body{
+        width: 90vw;
+    }
+
     header{
     padding: 0;
     margin: 0;
-    width: 99vw;
+    width: 99%;
     }
 
 
@@ -72,6 +76,11 @@
     margin: 0 auto;
     padding-left: 5px;
     transform: translate(0, 0);
-    width: 89%;
+    width: 70%;
+    display: flex;
    }
+
+   header .header-container .desc ul a{
+   }
+
 }
