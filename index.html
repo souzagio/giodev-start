@@ -17,9 +17,9 @@
             <nav class="nav-container">
                 <ul>
                     <h1>Giovany de Souza</h1>
-                    <a href="#" id="projeto">Projetos</a>
-                    <a href="#" id="formacao">Formação</a>
-                    <a href="#" id="contact">Contatos</a>
+                    <a href="#" id="projeto"  onclick="showPage(1)">Projetos</a>
+                    <a href="#" id="formacao"  onclick="showPage(2)">Formação</a>
+                    <a href="#" id="contact"  onclick="showPage(3)">Contatos</a>
                 </ul>
             </nav>
         </div>
@@ -86,5 +86,21 @@
     <footer>
         <p>Desenvolvido por Gio Souza</p>
     </footer>
+
+    <script>
+        function showPage(num)
+        {
+            if(num == 3)
+            {
+                alert(`
+                WhatsApp:  (16) 99403 - 1316
+                Ligação:      (16) 99268 - 3210`)
+            }
+            else
+            {
+                alert('Página em desenvolvimento. . .')
+            }
+        }
+    </script>
 </body>
 </html>

@@ -78,7 +78,6 @@
    }
 
    header .header-container .desc ul{
-    background-color: brown;
     display: flex;
     justify-content: start;
     align-items: flex-start;
